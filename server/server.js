@@ -30,7 +30,7 @@ const getLyricsFromAZLyrics = async (song, artist) => {
 
     // Extract lyrics from the page
     const lyrics = await page.evaluate(() => {
-      const lyricsElement = document.querySelector('.col-xs-12.col-lg-8.text-center .lyrics');
+      const lyricsElement = document.querySelector('.col-xs-12.col-lg-8.text-center .lyricsh');
       return lyricsElement ? lyricsElement.textContent.trim() : null;
     });
 
